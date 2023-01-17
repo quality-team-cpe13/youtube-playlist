@@ -35,8 +35,6 @@ export function PlaylistProvider({ children }: Props) {
     const [playlist, setPlaylist] = useState<playlistItem[]>([]);
 
     const handleSetPlaylist = (playlist: playlistItem[]) => {
-        console.log("playlist", playlist);
-
         setPlaylist(playlist)
     }
 

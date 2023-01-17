@@ -23,11 +23,6 @@ const VideoPlayers = ({ playlist, handleSetPlaylist }: Props) => {
         genPlaying();
     }
 
-    useEffect(() => {
-        genPlaying();
-    }, [])
-
-
     const genPlaying = () => {
         if (playlist.length > 0 && !playing) {
             const firstPlaylist = playlist.pop();

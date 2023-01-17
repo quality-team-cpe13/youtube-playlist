@@ -8,19 +8,10 @@ export type Props = {
 }
 
 const Navbar = ({ playlist, handleSetPlaylist }: Props) => {
-
-
-
-    useEffect(() => {
-        console.log('playlist', playlist); console.log('playlist', playlist);
-    }, [playlist])
-
-
+    const KEY = "AIzaSyBaRLJ1y3S9wKpnRfXhHOMVRAfyLHo4XjQ";
 
     const [item, setItem] = useState<playlistItem | undefined>();
     const [search, setSearch] = useState('');
-
-    const KEY = "AIzaSyBaRLJ1y3S9wKpnRfXhHOMVRAfyLHo4XjQ"
 
 
     async function getInfoYoutube(id: string) {
